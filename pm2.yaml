@@ -1,6 +1,6 @@
 apps:
   - script : nodemon --exec babel-node ./bin/www
     args   : 'start'
-    name   : 'api-jardim'
+    name   : 'jardim'
     watch  : true
     ignore_watch: '__clientTemp'
