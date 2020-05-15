@@ -1,9 +1,8 @@
 import express from 'express';
 const router = express.Router();
-//const plantasRouter = require('./modules/plantas/plantas.route');
-const dataRouter = require('./modules/data/data.route');
+const luzRouter = require('./modules/luz/luz.route');
 
 // Rota para login e etc
-router.use("/data", dataRouter);
+router.use("/luz", luzRouter);
 
 module.exports = router;

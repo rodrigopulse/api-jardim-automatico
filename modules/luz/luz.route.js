@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 const router = express.Router();
-const dataController = require('./data.controller');
+const luzController = require('./luz.controller');
 
 // Rota para fazer login
-router.get('/dataAtual', cors(), dataController.dataAtual);
+router.get('/status', cors(), luzController.luzStatus);
 
 module.exports = router;
