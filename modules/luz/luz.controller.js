@@ -3,7 +3,7 @@ exports.luzStatus = async (req, res) => {
   var hora = date.getHours() - 3;
   var minutos = date.getMinutes();
   let status = ''
-  if(hora >= 7 && hora <= 19) {
+  if(hora >= 7 && hora <= 18) {
     status = 1;
   } else {
     status = 0
